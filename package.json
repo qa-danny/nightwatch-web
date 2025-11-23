@@ -1,0 +1,24 @@
+{
+  "name": "nightwatch-web",
+  "version": "1.0.0",
+  "description": "NightwatchJS demo repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qa-danny/nightwatch-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/qa-danny/nightwatch-web/issues"
+  },
+  "homepage": "https://github.com/qa-danny/nightwatch-web#readme",
+  "devDependencies": {
+    "nightwatch": "^3.12.3"
+  }
+}
