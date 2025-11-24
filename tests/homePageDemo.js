@@ -4,7 +4,7 @@ module.exports = {
     
     await homePage.navigate();
     const headingText = await homePage.getHeadingText();
-    browser.assert.equal(headingText, 'Welcome to the-internet');
+    await browser.assert.equal(headingText, 'Welcome to the-internet');
   },
   'Get All Link Texts': async function (browser) {
     const homePage = browser.page.homepage();
