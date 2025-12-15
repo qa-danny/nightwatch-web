@@ -24,7 +24,7 @@ const chromeConfig = {
 };
 
 module.exports = {
-  src_folders: [],
+  src_folders: ['tests/'],
   page_objects_path: ['pages/'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
