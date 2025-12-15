@@ -1,3 +1,5 @@
+const { getDevice } = require('../utils/deviceConfig');
+
 module.exports = {
   'Go to Checkbox Page and Verify Elements': async function (browser) {
     const checkboxPage = browser.page.checkbox();
