@@ -1,3 +1,5 @@
+const { getDevice } = require('../utils/deviceConfig');
+
 module.exports = {
   'Go to Checkbox Page and Verify Elements': async function (browser) {
     const checkboxPage = browser.page.checkbox();
@@ -12,5 +14,7 @@ module.exports = {
     const originalState = await checkboxPage.clickCheckBoxByIndex(0);
     console.log('Original state was: ' + originalState + ', new state should be: ' + !originalState);
     await browser.expect(await checkboxPage.isCheckBoxSelectedByIndex(0)).to.equal(!originalState);
+    await console.log(getDevice())
+    await browser.pause(5000);
   }
 }

@@ -1,6 +1,7 @@
 {
   "name": "nightwatch-web",
   "version": "1.0.0",
+  "type": "commonjs",
   "description": "NightwatchJS demo repository",
   "main": "index.js",
   "scripts": {
@@ -13,7 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/qa-danny/nightwatch-web/issues"
   },
