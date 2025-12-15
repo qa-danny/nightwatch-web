@@ -1,3 +1,5 @@
+const { getDevice } = require('./utils/deviceConfig');
+
 module.exports = {
   // All default global settings from Nightwatch:
   abortOnAssertionFailure: true,
@@ -12,13 +14,13 @@ module.exports = {
   retryAssertionTimeout: 5000,
 
   async before() {
-    console.log('Global before hook - starting tests...');
+    console.log('Global before hook - starting tests.');
   },
   async after() {
     console.log('Global after hook - tests completed.');
   },
   async beforeEach(browser) {
-    console.log('Global beforeEach hook - setting up test...');
+    console.log('Global beforeEach hook - setting up test to run against ' + getDevice() + ' device.');
   },
   async afterEach(browser) {
     console.log('Global afterEach hook - test finished.');
