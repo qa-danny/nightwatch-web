@@ -38,6 +38,9 @@ module.exports = {
   
   // See https://nightwatchjs.org/guide/concepts/test-globals.html#external-test-globals
   globals_path : 'globals.js',
+  
+  // Removes boxes around test output in the console when running concurrently:
+  disable_output_boxes: true,
 
   webdriver: {},
   
