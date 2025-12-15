@@ -28,4 +28,4 @@ jobs:
 
       - name: Run Nightwatch tests
         run: |
-          npx nightwatch --env chrome --headless
+          npx nightwatch --headless
